@@ -16,7 +16,7 @@ movieli.addEventListener('click', (e) => movieClickHandler(movies))
 function movieClickHandler(movies) {
     el('title').textContent =movies.title;
     el('runtime').textContent = movies.runtime + " " + "Minutes";
-    el('capacity').textContent = movies.capacity;
+    //el('capacity').textContent = movies.capacity;
     el('showtime').textContent = movies.showtime;
     //el("tickets_sold").textContent= movie.tickets_sold;
     el('film-info').textContent = movies.description;
