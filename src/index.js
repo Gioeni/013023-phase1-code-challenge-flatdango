@@ -20,7 +20,7 @@ function movieClickHandler(movies) {
     el('showtime').textContent = movies.showtime;
     //el("tickets_sold").textContent= movie.tickets_sold;
     el('film-info').textContent = movies.description;
-    el('posterImage').src = movies.poster;
+    el('poster').src = movies.poster;
 }
 function el(id){
     return document.getElementById(id)
