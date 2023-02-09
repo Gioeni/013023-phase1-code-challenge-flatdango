@@ -1,6 +1,7 @@
 const apiUrl = 'http://localhost:3000/films'
 
 const movieMenu = document.querySelector('#films');
+const buyTicket = document.getElementById('buy-ticket');
 
 fetch(apiUrl)
 .then(response => response.json())
@@ -37,10 +38,15 @@ function movieHandler(e){
     description: e.target.description.value,
     posterImage: e.target.poster.value,
     }
-    
-}
 
-renderMovie(newMovie);
+//buyTicket.addEventListener('click', (event) => buyTicketHandler(newMovie))
+    
+}    
+//buyTicketHandler(newMovie){
+   //el('ticket-num').innerTect = capacity - tickets-sold;
+//}
+
+//renderMovie(newMovie);
 
 
 
