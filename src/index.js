@@ -45,13 +45,21 @@ function renderMovies(data) {
     movieLi.innerText = data.title
     MovieMenu.appendChild(movieLi); 
 
+// add event listener here so the list can be clicked 
+// and then update the info for that movie.
+    movieLi.addEventListener('click', () =>{
+         renderFirstMovie(data)
+     })
+
     
 }
 function ticketsRemaining(data) {
     const ticketCount = document.getElementById("ticket-num")
     ticketCount.innerHTML = Math.max(0, data.capacity - (data.tickets_sold +=1))
-    // ticketCount.textContent = data.capacity - data.tickets_sold
+    
 }
+
+
 
 
 
